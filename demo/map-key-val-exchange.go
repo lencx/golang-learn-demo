@@ -5,8 +5,8 @@ import (
 )
 
 // TODO:
-// map[1:a 2:b 3:c 4:d 5:e]
-// => map[a:1 b:2 c:3 d:4 e:5]
+// map[1:a 2:b 3:c 4:d]
+// => map[a:1 b:2 c:3 d:4]
 
 func main() {
 	m := map[int]string{1: "a", 2: "b", 3: "c", 4: "d"}
