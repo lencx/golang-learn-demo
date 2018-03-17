@@ -21,6 +21,18 @@ func Sqrt(x float64) float64 {
 	return z
 }
 
+func Sqrt2(x float64) float64 {
+	z := float64(1)
+	var tmp float64
+	for i := 0; i < 10; i++ {
+		tmp = z - (z*z-x)/(2*z)
+		z = tmp
+		fmt.Println(z)
+	}
+	return z
+}
+
 func main() {
-	fmt.Println(Sqrt(2.0))
+	// fmt.Println(Sqrt(2.0))
+	fmt.Println(Sqrt2(2.0))
 }
